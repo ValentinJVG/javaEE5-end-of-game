@@ -5,6 +5,6 @@
 - Model
 
 - View: view for end user
-- Controller: responsible for retuning the view
+- Controller: responsible for returning the view
 - Service: application logic
 - Repository: stores/retrieves the data
