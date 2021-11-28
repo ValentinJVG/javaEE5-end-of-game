@@ -1,5 +1,6 @@
 package com.example.endofgame.controller;
 
+import com.example.endofgame.dto.PersonSummary;
 import com.example.endofgame.entity.Person;
 import com.example.endofgame.service.PersonService;
 import lombok.extern.slf4j.Slf4j;
@@ -15,7 +16,7 @@ public class PersonController {
         this.service = service;
     }
     @GetMapping("/me")
-    public Person representMe() {
+    public PersonSummary representMe() {
         log.info("representMe()");
         return service.getMyPerson();
     }
