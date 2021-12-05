@@ -11,6 +11,6 @@ public class MyBeans {
 
     @Bean
     public ExecutorService workers() {
-        return Executors.newFixedThreadPool(1);
+        return Executors.newFixedThreadPool(4);
     }
 }

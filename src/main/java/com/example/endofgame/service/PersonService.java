@@ -36,21 +36,20 @@ public class PersonService {
             @Override
             public void run() {
                 log.info("inside anonymous class");
-                log.info("I'm running by: [" + Thread.currentThread().getName() + "]");
-
+                log.info("I'm running by:[" + Thread.currentThread().getName() + "]");
             }
         };
-
         Runnable newJob = () -> {
-            log.info("inside lamda");
-            log.info("I'm running by: [" + Thread.currentThread().getName() + "]");
+            log.info("inside lambda");
+            log.info("I'm running by:[" + Thread.currentThread().getName() + "]");
             try {
                 Thread.sleep(2000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         };
-workers.submit(newJob);
-workers.submit(anotherJob);
+
+        workers.submit(newJob);
+        workers.submit(anotherJob);
     }
 }

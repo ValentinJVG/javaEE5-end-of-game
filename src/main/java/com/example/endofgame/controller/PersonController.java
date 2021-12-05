@@ -25,6 +25,5 @@ public class PersonController {
     public void runNewThread() {
         log.info("new-thread");
         service.runNewThread();
-
     }
 }
