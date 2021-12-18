@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @Slf4j
 public class PersonController {
-
     private final PersonService service;
 
     public PersonController(final PersonService service) {
