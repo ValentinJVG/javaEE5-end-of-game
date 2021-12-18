@@ -43,4 +43,11 @@ public class Category {
     public void beforeUpdate() {
         updateTimestamp = LocalDateTime.now();
     }
+
+    // properties in java:)
+//    private String someField;
+//
+//    public String getValue() {
+//        return someField;
+//    }
 }
