@@ -9,15 +9,17 @@ import { MatTableModule } from '@angular/material/table';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { RouterModule, Routes } from '@angular/router';
 import { categoriesUrl, homeUrl } from './models/links';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
-  { path: homeUrl, component: AppComponent },
+  { path: homeUrl, component: HomeComponent },
   { path: categoriesUrl, component: CategoryComponent }
 ]
 @NgModule({
   declarations: [
     AppComponent,
-    CategoryComponent
+    CategoryComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
